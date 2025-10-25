@@ -133,12 +133,20 @@ li:hover {
   color: #000;
   /* options text visible */
 }
+.example {
+  margin-top: 40px;
+}
+.example p{
+  text-align: left;
+  padding: 10px;
+}
 
 
 footer {
   margin-top: 3em;
   color: #999;
   font-size: 0.9em;
+  margin-left: 40%;
 }
 
 @keyframes fadeIn {

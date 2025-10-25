@@ -59,7 +59,9 @@ generateBtn.addEventListener("click", async () => {
     }
   }
 
+  output.classList.remove("hidden");
   output.textContent = "Generating dream... 🧠";
+
 
   try {
     const res = await fetch("/api/story", {
@@ -72,12 +74,16 @@ generateBtn.addEventListener("click", async () => {
     if (data.error) {
       output.textContent = "Error: " + data.error;
     } else {
+      // ✅ Show generated story in output
+      output.classList.remove("hidden");
+      output.textContent = data.story;
+
       // Save to session only
       sessionDreams.unshift({ prompt: finalPrompt, story: data.story });
 
       fetchSharedDreams();
       promptInput.value = "";
-      storyTypeSelect.value = ""; 
+      storyTypeSelect.value = "";
     }
   } catch (err) {
     console.error(err);
