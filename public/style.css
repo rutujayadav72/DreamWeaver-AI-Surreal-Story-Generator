@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Quicksand:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: radial-gradient(circle at 20% 20%, #2b1055, #000);
+  color: #f8f8ff;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 3em auto;
+  text-align: center;
+  padding: 1em;
+}
+
+header h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3em;
+  color: #b084f6;
+  text-shadow: 0 0 20px #c77dff;
+}
+
+.tagline {
+  color: #ccc;
+  margin-bottom: 2em;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 0.5em;
+}
+
+input {
+  width: 60%;
+  padding: 0.8em;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  padding: 0.8em 1.2em;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #7c3aed, #b084f6);
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #b084f6;
+}
+
+.story-box {
+  margin-top: 2em;
+  padding: 2em;
+  font-style: italic;
+  line-height: 1.7em;
+  animation: fadeIn 1.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.recent {
+  margin-top: 3em;
+  text-align: left;
+}
+
+.recent h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #b084f6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5em 0;
+  padding: 0.5em 1em;
+  border-left: 2px solid #b084f6;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+li:hover {
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.story-type-label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.story-type-select {
+  width: 20%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.story-type-select option {
+  color: #000;
+  /* options text visible */
+}
+
+
+footer {
+  margin-top: 3em;
+  color: #999;
+  font-size: 0.9em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+
+  .input-box {
+    flex-direction: column;
+  }
+}

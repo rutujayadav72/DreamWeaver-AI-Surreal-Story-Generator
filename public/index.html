@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamWeaver — AI Surreal Story Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>🌙 DreamWeaver</h1>
+      <p class="tagline">Give a little prompt and watch it become a dream.</p>
+    </header>
+
+    <main>
+      <div class="input-box glass">
+
+        <!-- ⭐  Story Type Selector -->
+        <label for="storyType" class="story-type-label">Choose a story type:</label>
+        <select id="storyType" class="story-type-select">
+          <option value="">-- Select Type --</option>
+          <option value="dreamy">💤 Dreamy Story</option>
+          <option value="horror">💀 Horror Story</option>
+          <option value="fantasy">🧚 Fantasy Story</option>
+          <option value="mystery">🕵️ Mystery Story</option>
+          <option value="sci-fi">🚀 Sci-Fi Story</option>
+          <option value="romance">💖 Romance</option>
+          <option value="adventure">🏔️ Adventure</option>
+          <option value="mythical">🐉 Mythical</option>
+          <option value="historical">🏰 Historical</option>
+          <option value="comedy">😂 Comedy
+          <option>
+          <option value="thriller">🔪 Thriller</option>
+          <option value="inspirational">🌅 Inspirational</option>
+        </select>
+        <!-- ⭐ END  -->
+
+        <input id="prompt" type="text" placeholder="e.g., 'lost time', 'a thunderstorm', 'mango dream'" />
+        <button id="generateBtn">✨ Weave My Dream</button>
+      </div>
+
+      <div id="output" class="story-box glass hidden"></div>
+
+
+      <section class="recent">
+        <h2>Recent Dreams</h2>
+        <ul id="recent"></ul>
+      </section>
+
+      <div class="recent">
+        <h2>Example (How to use)</h2>
+        <h3>Select story type: horror story. Prompt:cat and dog friendship</h3>
+        <h3>Output:</h3>
+        <p>Horror story: cat and dog friendship: Bartholomew the Basset Hound had eyes like melted licorice and a
+          mournful sigh that could curdle milk. He was, to put it mildly, melancholic. So, when Mittens, a Siamese with
+          eyes the color of frozen sapphires, took to lurking in his doghouse, Bartholomew was initially horrified.
+          Mittens wasn't normal. She didn't purr, she clicked. Her meow sounded like wind chimes in a graveyard. And she
+          had a disconcerting habit of staring just behind Bartholomew's head, a faint smile playing on her
+          whisker-twitching lips. Their friendship began oddly. One twilight, Bartholomew noticed Mittens meticulously
+          arranging dead crickets in a circle around his water bowl. "What are you doing?" he whined, the question a
+          guttural rumble in his chest. Mittens clicked. "A ward. To keep the shadows away. They hunger, you know."
+          Bartholomew didn't know. But he trusted Mittens, the way one trusts the only other creature who understands
+          the chilling drafts whispering through the house at night. Their days became a grotesque ballet. Mittens would
+          lead Bartholomew on hunts through the overgrown garden, pointing out the twitching, half-formed earthworms
+          with a flick of her tail. He'd dig them up, not to eat, but to bury them deeper, ensuring they didn't escape
+          the earth's hungry embrace. One night, Bartholomew woke to find Mittens staring, truly staring, at him.
+          "Tonight," she clicked, her voice like ice shattering. "The shadows come for you." He whimpered, burying his
+          face in his paws. Then, a voice, not his, not Mittens', but a chorus of rustling leaves and cracking bones,
+          whispered from the darkness: "We have waited long enough." Bartholomew looked up. Mittens was gone. Only the
+          scent of damp earth and the faint echo of wind chimes remained. He was alone. And the shadows, finally, were
+          home.</p>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>Made with 💜 by DreamWeaver AI</p>
+  </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
