@@ -94,4 +94,9 @@ DREAMWAVER/
 │ ├──server.js
 │
 
+```
+## How to use
+
+Select story type: horror story. Prompt:cat and dog friendship (like these prompts)
 ---
+
