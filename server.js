@@ -8,7 +8,7 @@ import { db } from "./db.js";
 
 //  Use GEMINI_API_KEY from .env
 const ai = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-export const db = mysql.createPool(process.env.MYSQL_URL);
+
 
 // Free tier compatible model
 const STORY_MODEL = "gemini-2.0-flash";
