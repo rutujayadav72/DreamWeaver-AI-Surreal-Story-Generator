@@ -33,7 +33,7 @@ Built with **Node.js, Express, MySQL**, and **Google Gemini API**, it lets users
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/dreamweaver.git
+git clone https://github.com/rutujayadav72/dreamweaver.git
 cd dreamweaver
 
 ```
