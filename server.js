@@ -11,14 +11,6 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
-
-if (!process.env.GEMINI_API_KEY) {
-  console.error("❌ GEMINI_API_KEY is missing! Set it in your .env file.");
-  process.exit(1);
-} else {
-  console.log("✅ Gemini API key loaded successfully");
-}
-
 async function generateStory(prompt) {
   const fullPrompt = `Write a concise 100-word surreal story about: ${prompt}`;
 
